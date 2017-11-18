@@ -1,3 +1,5 @@
+// Generate in San Francisco, CA
+
 var DAY_MILLISECONDS = 1000 * 60 * 60 * 24;
 var WEEK_MILLISECONDS = DAY_MILLISECONDS * 7;
 
@@ -8,12 +10,14 @@ console.log('Before daylights saving: ' + new Date(regular_day.getTime() - DAY_M
 
 console.log();
 
+// Go back by 24 * 60 * 60 seconds
 var after_daylights_saving_transition = new Date('2017-11-06T02:00:00');
 console.log('After daylights saving: ' + after_daylights_saving_transition);
 console.log('On daylights saving: ' + new Date(after_daylights_saving_transition.getTime() - DAY_MILLISECONDS));
 
 console.log();
 
+// Go back by a day using JavaScript's inbuilt function
 console.log('After daylights saving: ' + after_daylights_saving_transition);
 var day_before_daylights_saving = new Date(after_daylights_saving_transition);
 day_before_daylights_saving.setDate(day_before_daylights_saving.getDate() - 1);
