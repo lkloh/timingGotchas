@@ -16,3 +16,9 @@ oct15_2017 = new Date(new Date("2017-10-15T00:00:00.00").getTime());
 console.log('Today: ' + oct15_2017);
 console.log('Yesterday: ' + new Date(oct15_2017.setDate(oct15_2017.getDate()-1)));
 console.log('24 hours ago: ' + new Date(new Date("2017-10-15T00:00:00.00").getTime()-1000*60*60*24));
+
+console.log();
+jan1_1999 = new Date(new Date("1999-01-01T00:00:00.00").getTime());
+console.log('Today: ' + jan1_1999);
+console.log('Yesterday: ' + new Date(jan1_1999.setDate(jan1_1999.getDate()-1)));
+console.log('24 hours ago: ' + new Date(new Date("1999-01-01T00:00:00.00").getTime()-1000*60*60*24));
